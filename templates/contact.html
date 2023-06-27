@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #333333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #000000; /* Updated to black */
+        }
+
+        nav li {
+            float: left;
+        }
+
+        nav li a {
+            display: block;
+            color: #ffffff; /* Updated to white */
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav li a:hover {
+            background-color: #dddddd;
+        }
+
+        section {
+            text-align: center;
+            margin: 50px auto;
+            width: 80%;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            font-size: 36px;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            font-size: 18px;
+            color: #666666;
+            margin-bottom: 20px;
+        }
+
+        form {
+            text-align: left;
+        }
+
+        form label {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border: 1px solid #cccccc;
+        }
+
+        form textarea {
+            height: 100px;
+        }
+
+        form input[type="submit"] {
+            background-color: #333333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #111111;
+        }
+
+        section ul {
+            text-align: center;
+            list-style-type: none;
+            margin-top: 20px;
+            padding: 0;
+        }
+
+        section ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        footer {
+            background-color: #f2f2f2;
+            color: #666666;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/resources">Resources</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h2>Get in Touch</h2>
+        <p>
+            Feel free to reach out to me via the form below or connect with me on LinkedIn or GitHub. I would love to hear from you!
+        </p>
+        <form action="/contact" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" required></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+        <br>
+        <p>
+            You can also connect with me on:
+            <ul>
+                <li>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/your-linkedin-profile">LinkedIn Profile</a></li>
+                <li>GitHub: <a href="https://github.com/your-username">GitHub Profile</a></li>
+            </ul>
+        </p>
+    </section>
+    <footer>
+        &copy; 2023 My Portfolio
+    </footer>
+</body>
+</html>

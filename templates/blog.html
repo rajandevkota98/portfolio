@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #000000;
+            color: white;
+            padding: 10px;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .navbar li {
+            float: left;
+        }
+
+        .navbar li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar li a:hover {
+            background-color: #111;
+        }
+
+        .project-grid {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-item {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .project-item img {
+            margin-right: 10px;
+        }
+
+        .portfolio-box {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .portfolio-box h2 {
+            font-size: 40px;
+            color: black;
+            margin: 0;
+        }
+
+        .portfolio-heading {
+            text-align: center;
+            margin-top: 150px;
+        }
+
+        .portfolio-heading h1 {
+            font-size: 40px;
+            color: white;
+            margin: 0;
+            margin-bottom: 40px;
+        }
+
+        .portfolio-description {
+            text-align: center;
+            color: white;
+            font-size: 20px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="/aboutme">About Me</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/contactme">Contact</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/resources">Resources</a></li>
+            <li style="float: right;"><a href="https://github.com"><span style="font-size: 20px;">🐙</span></a></li>
+            <li style="float: right;"><a href="https://linkedin.com"><span style="font-size: 20px;">🌐</span></a></li>
+        </ul>
+    </div>
+    <div class="project-grid">
+        <div class="project-item">
+            <img style="margin-left: 40px;" src="static/datascience.jpeg" alt="Project 1">
+            <div class="project-details">
+                <h3>Project 1</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum volutpat mauris.
+                </p>
+                <a href="project1.html">Read More</a>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <img style="margin-left: 40px;" src="static/datascience.jpeg" alt="Project 2">
+            <div class="project-details">
+                <h3>Project 2</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum volutpat mauris.
+                </p>
+                <a href="project2.html">Read More</a>
+            </div>
+        </div>
+
+        <!-- Repeat the structure for other projects -->
+    </div>
+
+    <!-- Repeat the structure for the third project -->
+
+</body>
+</html>
